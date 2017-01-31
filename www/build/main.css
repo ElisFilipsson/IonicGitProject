@@ -21318,7 +21318,7 @@ page-home {
 
 page-home .container {
   padding-top: 50%;
-  background-image: url("../../assets/splash.png");
+  background-image: url("./assets/splash.png");
   background-color: #f0f0f0;
   background-repeat: no-repeat;
   background-position: center;
