@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>My Git</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="goBack()">
+        <ion-icon name="md-home"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-avatar>
+      <img [src]="username.avatar_url">
+    </ion-avatar>
+    <ion-item>
+      <ion-label>Username</ion-label>
+      <h2 item-right>{{ username.login }}</h2>
+    </ion-item> 
+    <ion-item>
+      <ion-label>Followers</ion-label>
+      <ion-badge item-right>{{username?.followers}}</ion-badge>
+    </ion-item>
+     <ion-item>
+      <ion-label>Following</ion-label>
+      <ion-badge item-right>{{username?.following}}</ion-badge>
+    </ion-item>
+     <ion-item>
+      <ion-label>Repos</ion-label>
+      <ion-badge item-right>{{username?.public_repos}}</ion-badge>
+    </ion-item>
+     <ion-item>
+      <ion-label>Gists</ion-label>
+      <ion-badge item-right>{{username?.public_gists}}</ion-badge>
+    </ion-item>
+  </ion-list>
+</ion-content>

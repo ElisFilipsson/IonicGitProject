@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{repo?.name}}</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="goBack()">
+        <ion-icon name="md-home"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+  <ion-list>
+    <ion-item>
+      <ion-label>Name:</ion-label>
+      <h2 item-right>{{repo?.full_name}}</h2>
+    </ion-item>
+    <ion-item>
+      <ion-label>Language:</ion-label>
+      <ion-badge item-right>{{repo?.language}}</ion-badge>
+    </ion-item>
+     <ion-item>
+      <ion-label>Clone:</ion-label>
+      <a href="{{repo?.clone_url}}" target="_blank" ion-badge item-right>GO TO URL</a>
+    </ion-item>
+     <ion-item>
+      <ion-label>Created:</ion-label>
+      <h2 item-right>{{repo?.created_at}}</h2>
+    </ion-item>
+    <ion-item>
+      <ion-label>Forks</ion-label>
+      <ion-badge item-right>{{repo?.forks}}</ion-badge>
+    </ion-item>
+     <ion-item>
+      <ion-label>Open Issues</ion-label>
+      <ion-badge item-right>{{repo?.open_issues}}</ion-badge>
+    </ion-item>
+     <ion-item>
+      <ion-label>Watchers</ion-label>
+      <ion-badge item-right>{{repo?.watchers}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      <h2>{{repo?.url}}</h2>
+    </ion-item>
+  </ion-list>    
+</ion-content>

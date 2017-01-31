@@ -1,0 +1,37 @@
+page-home {
+    background: #f0f0f0;
+    .container {
+        padding-top: 50%;
+        background-image: url("../../assets/splash.png");
+        background-color: #f0f0f0;
+        background-repeat: no-repeat;
+        background-position: center; 
+        height: 100%;
+        width: 100%;
+        color: $dark;
+
+        .item {
+            width: 90%;
+            margin: 5%;
+        }
+        .img {
+            background-image: url('assets/icon/favicon.ico');
+        }
+        .enter {
+            color: $medium;
+            background-color: $dark;
+            color: $medium;
+            width: 90%;
+            margin: 5%;
+            padding: 5px;
+        }
+        h2 {
+            text-align: center;
+            
+        }
+        
+    }
+    
+    
+    
+}
