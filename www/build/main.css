@@ -21332,10 +21332,6 @@ page-home .container .item {
   margin: 5%;
 }
 
-page-home .container .img {
-  background-image: url("assets/icon/favicon.ico");
-}
-
 page-home .container .enter {
   color: #eaeaea;
   background-color: #000000;
